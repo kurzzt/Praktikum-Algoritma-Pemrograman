@@ -1,9 +1,0 @@
-/*Kode Sumber 2.1 Deklarasi pada Kamus*/
-
-{Deklarasi kamus yang terdiri nama, tipe data, konstanta dan variabel}
-
-Kamus
-    S : integer { Variabel, Sisi bujursangkar }
-    Luas: integer { Variabel, Luas bujursangkar }
-    constant Phi: integer = 3.14159265358979323846
-                            {Konstanta Phi}
