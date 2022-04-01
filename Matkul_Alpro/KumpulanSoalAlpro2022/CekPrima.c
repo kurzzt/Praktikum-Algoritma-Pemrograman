@@ -8,32 +8,31 @@ inputan bilangan integer sembarang N (N>0) bilangan prima atau bukan
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 int main() {
     //Kamus
-    int N, i=1, c=0;
+    int N, i, m,c=0;
 
     //Algoritma
     printf("Masukkan bilangan : ");
     scanf("%d", &N);
 
     if (N>0){
-        for(i=2; i<=(sqrt(N)); i++){
-            if (N%i == 0){
-                c = 1;
-                break;
+        if (N == 1) printf("1 bukanlah bilangan prima");
+        else{
+            m = N/2;
+            for(i=2; (i<=m); i++){
+                if (N%i == 0){
+                    printf("%d bukanlah bilangan prima", N);
+                    c =1;
+                    break;
+                }
             }
-        }
-        if (c = 1){
-            printf("%d adalah bilangan prima", N);
-        }else{
-            printf("%d bukanlah bilangan prima", N);
+
+            if (c==0) printf("%d adalah bilangan prima", N);
         }
     }else{
         printf("Masukkan input bernilai integer positif");
     }
     return 0;
 }
-
-
